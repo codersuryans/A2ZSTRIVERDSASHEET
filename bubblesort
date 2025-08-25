@@ -1,0 +1,23 @@
+public class bublesort {
+    public static void main(String [] args){
+        int a[]={13,46,24,52,20,9};
+        int n=a.length;
+        for(int i=n-1;i>=1;i++){
+            int didswap=0;
+            for(int j=0;j<i-1;j++){
+                if(a[j]>a[j+1]){
+                    int temp=a[j+1];
+                    a[j+1]=a[j];
+                    a[j]=temp;
+                    didswap=1;
+                }
+            }
+            if(didswap==0){
+                break;
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+}
