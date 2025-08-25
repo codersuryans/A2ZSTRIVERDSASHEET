@@ -1,0 +1,64 @@
+public class Mergesort {
+    int[] arr;
+    int[] tempmerge;
+    int len;
+
+    public static void main(String args[]) {
+        int[] a = {48, 36, 13, 94, 52, 19, 21};
+        Mergesort ms = new Mergesort();
+        ms.sort(a);
+
+        // print sorted array
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+
+    public void sort(int[] a) {
+        this.arr = a;
+        this.len = a.length;
+        this.tempmerge = new int[len];
+        divideArray(0, len - 1);
+    }
+
+    private void divideArray(int low, int high) {
+        if (low < high) {
+            int mid = (low + high) / 2;
+            // recursive calls
+            divideArray(low, mid);
+            divideArray(mid + 1, high);
+            // merge sorted halves
+            mergeArray(low, mid, high);
+        }
+    }
+
+    private void mergeArray(int low, int mid, int high) {
+        // copy both parts into temp array
+        for (int i = low; i <= high; i++) {
+            tempmerge[i] = arr[i];
+        }
+
+        int i = low;
+        int j = mid + 1;
+        int k = low;
+
+        while (i <= mid && j <= high) {
+            if (tempmerge[i] <= tempmerge[j]) {
+                arr[k] = tempmerge[i];
+                i++;
+            } else {
+                arr[k] = tempmerge[j];
+                j++;
+            }
+            k++;
+        }
+
+        // copy remaining elements of left half if any
+        while (i <= mid) {
+            arr[k] = tempmerge[i];
+            k++;
+            i++;
+        }
+        // right half will already be in place
+    }
+}
