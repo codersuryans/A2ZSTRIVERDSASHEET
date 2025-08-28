@@ -29,3 +29,21 @@ I’ll be updating it daily with the problems I solve.
 - Master Data Structures & Algorithms  
 
 ---
+## 🚀 Day 2 – Striver’s A2Z DSA Sheet Progress  
+
+✅ Completed the following problems today:  
+- **Insertion Sort (Iterative & Recursive)**  
+- **Merge Sort (Divide & Conquer Approach)**  
+- Practiced problem variations related to sorting  
+
+📌 Concepts Learned:
+- How insertion sort shifts elements instead of swapping.  
+- Recursive implementation of insertion sort.  
+- Merge sort’s time complexity O(n log n) and how it performs better than quadratic sorts.  
+
+🛠️ Language Used: **Java**  
+
+👉 Committed all codes to the repository for tracking consistency.  
+
+---
+
