@@ -36,6 +36,27 @@ I’ll be updating it daily with the problems I solve.
 ✅ **Largest Element in an Array**  
 ✅ **Second Largest Element in an Array (without sorting)**  
 ✅ **Check if the Array is Sorted**  
+✅ Day 3
+
+Check if the Array is Sorted
+
+Remove Duplicates from Sorted Array
+
+Left Rotate an Array by One Place
+
+Left Rotate an Array by D Places
+
+✅ Day 4
+
+Union of Two Sorted Arrays
+
+Intersection of Two Sorted Arrays
+
+Find the Missing Element in an Array
+
+Maximum Consecutive Ones
+
+💡 Consistency is the key! Each day I’m solving problems and getting one step closer to mastering DSA. 💻
 
 📌 **Concepts Learned**:  
 - Recursive approach to insertion sort.  
